@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+select {
+    margin-right: 0.5%;
+    border-radius: 5px;
+}
+  
+.lower {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+  
+.WhiteKeys {
+    width: 10%;
+    height: 100px;
+    background-color: white;
+    border: 3px outset;
+}
+  
+.WhiteKeys:active {
+    background-color: darkgray;
+    border: 3px solid gray;
+}
+  
+.ActionButtons {
+    height: 15px;
+}
+
+.tuneLabel{
+    margin-right: 5px;
+}
+
+#actions {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 10%;
+}
+
+#actions label {
+    margin-top: 3px;
+}
+
+#actions button {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#actions button:active {
+    background-color: darkgray;
+}
+
+
+#WhiteKeyGroup {
+    display: flex;
+    width: 100%;
+}
+
+#lala {
+    padding-left: 10%;
+    padding-right: 0.5%;
+}
+  
+.black-Key1,
+.black-Key2,
+.black-Key3,
+.black-Key4,
+.black-Key5,
+.black-Key6,
+.black-Key7 {
+    font-size: 70%;
+    padding: 0;
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 5%;;
+    height: 80px;
+}
+  
+.black-Key1:active,
+.black-Key2:active,
+.black-Key3:active,
+.black-Key4:active,
+.black-Key5:active,
+.black-Key6:active,
+.black-Key7:active {
+    background-color: darkgray;
+    border: 2px solid gray;
+}
+  
+.black-Key1 {
+    left: 7.5%;
+}
+  
+.black-Key2 {
+    left: 17.5%;
+}
+  
+.black-Key3 {
+    left: 37.5%;
+}
+  
+.black-Key4 {
+    left: 47.5%;
+}
+
+.black-Key5 {
+    left: 57.5%;
+}
+
+.black-Key6 {
+    left: 77.5%;
+}
+
+.black-Key7 {
+    left: 87.5%;
+}
+
+.popupContainer {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+    main {
+        display: none;
+    }
+
+    .popupContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popupPicture {
+        margin-left: 15%;
+        margin-top: 15%;
+        width: 70%;
+    }
+
+    .popupText {
+        font-size:large;
+        text-align: center;
+    }
+}

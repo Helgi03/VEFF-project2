@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Piano</title>
+</head>
+<body>
+    <main>
+        <div id="actions">
+            <label for="tunes" class="tuneLabel">Tune:</label>
+            <select id="tunes" class="tunes">
+                <option value="Elise">Für Elise</option>
+                <option value="Godfather">The Godfather</option>
+                <option value="SNA">Seven Nation Army</option>
+            </select>
+            <button><img src="play.png" alt="Play Button" class="ActionButtons" id="playButton"></button>
+            <label id="lala">Record:</label>
+            <div id="recordButtonGroup">
+                <button><img src="record.png" alt="Record Button" class="ActionButtons"></button>
+                <button><img src="stop.png" alt="Stop Button" class="ActionButtons"></button>
+            </div>
+        </div>
+        <div class="lower">
+            <div id="WhiteKeyGroup">
+                <button class="WhiteKeys">C4<br>(a)</button>
+                <button class="WhiteKeys">D4<br>(s)</button>
+                <button class="WhiteKeys">E4<br>(d)</button>
+                <button class="WhiteKeys">F4<br>(f)</button>
+                <button class="WhiteKeys">G4<br>(g)</button>
+                <button class="WhiteKeys">A4<br>(h)</button>
+                <button class="WhiteKeys">B4<br>(j)</button>
+                <button class="WhiteKeys">C5<br>(k)</button>
+                <button class="WhiteKeys">D5<br>(l)</button>
+                <button class="WhiteKeys">E5<br>(;)</button>
+            </div>
+            <button class="black-Key1">C#4<br>(w)</button>
+            <button class="black-Key2">D#4<br>(e)</button>
+            <button class="black-Key3">F#$<br>(t)</button>
+            <button class="black-Key4">G#$<br>(y)</button>
+            <button class="black-Key5">Bb4<br>(u)</button>
+            <button class="black-Key6">C#5<br>(o)</button>
+            <button class="black-Key7">D#5<br>(p)</button>
+        </div>
+    </main>
+    <div class="popupContainer">
+        <img src="oops.jpg" alt="oops! picture" class="popupPicture">
+        <p class="popupText">This website requires at least 600px screen width.</p>
+    </div>
+</body>
+</html>
